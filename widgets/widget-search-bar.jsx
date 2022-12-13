@@ -6,7 +6,6 @@ if (!data) {
 
 const accounts = Object.entries(data);
 const allWidgets = [];
-const matchedWidgets = [];
 
 for (let i = 0; i < accounts.length; ++i) {
     const accountId = accounts[i][0];
@@ -79,7 +78,7 @@ return (
                         widgetElms.push(
                             <div className="me-1 mb-1 badge">
                                 <a href={`#/${widget.src}`}>{widget.name}</a>
-                                <div className="">
+                                <div className="text-dark">
                                     <small>{`@${accountName}`}</small>
                                 </div>
                             </div>
